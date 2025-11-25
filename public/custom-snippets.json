@@ -1,0 +1,345 @@
+{
+	"log": {
+		"prefix": "clg",
+
+		"body": "console.log($1)"
+	},
+	"arrow function": {
+		"prefix": "arf",
+		"body": "const ${1:name} = ($2) => {$3}"
+	},
+
+	"export Function": {
+		"prefix": "efc",
+		"body": ["export function ${1:${TM_FILENAME_BASE}}() {", "  return (", "    <div>${1:first}</div>", "  )", "}"]
+	},
+
+	"export default Function": {
+		"prefix": "edfc",
+		"body": [
+			"export default function ${1:${TM_FILENAME_BASE}}() {",
+			"  return (",
+			"    <div>${1:first}</div>",
+			"  )",
+			"}"
+		]
+	},
+
+	"export default async function": {
+		"prefix": "edafc",
+		"body": [
+			"export default async function ${1:${TM_FILENAME_BASE}}() {",
+			"  return (",
+			"    <div>${1:first}</div>",
+			"  )",
+			"}"
+		]
+	},
+
+	"self callable async function": {
+		"prefix": "iife",
+		"body": ["(async() => {\n\t$0\n})();"]
+	},
+	"Swiper": {
+		"scope": "html",
+		"prefix": "swiper",
+		"body": [
+			"<div class=\"${1:имя-блока}__slider swiper\">\n\t<div class=\"${1:имя-блока}__wrapper swiper-wrapper\">\n\t\t<div class=\"${1:имя-блока}__slide swiper-slide\"></div>\n\t</div>\n</div>"
+		],
+		"description": "Добавляет базовый HTML код слайдера Swiper"
+	},
+	"Swiper Full": {
+		"scope": "html",
+		"prefix": "swiperfull",
+		"body": [
+			"<!-- Оболочка слайдера -->\n<div class=\"${1:имя-блока}__slider swiper\">\n\t<!-- Двигающееся часть слайдера -->\n\t<div class=\"${1:имя-блока}__wrapper swiper-wrapper\">\n\t\t<!-- Слайд -->\n\t\t<div class=\"${1:имя-блока}__slide swiper-slide\"></div>\n\t</div>\n\t<!-- Если нужна пагинация -->\n\t<div class=\"swiper-pagination\"></div>\n\t<!-- Если нужна навигация (влево/вправо) -->\n\t<button type=\"button\" class=\"swiper-button-prev\"></button>\n\t<button type=\"button\" class=\"swiper-button-next\"></button>\n\t<!-- Если нужен скролбар -->\n\t<div class=\"swiper-scrollbar\"></div>\n</div>"
+		],
+		"description": "Добавляет базовый HTML код слайдера Swiper"
+	},
+	"React useState hook": {
+		"scope": "javascript,typescript",
+		"prefix": "sta",
+		"body": ["const [${1:state}, set${2:setterName}] = useState(${3:initialValue})"],
+		"description": "React useState hook"
+	},
+
+	"React useEffect hook": {
+		"scope": "javascript,typescript",
+		"prefix": "eff",
+		"body": [
+			"useEffect(() => {",
+			"   ${1:effect}",
+			"   return () => {",
+			"      ${2:cleanup}",
+			"   }",
+			"}, [${3:dependencies}])"
+		],
+		"description": "React useEffect hook with cleanup"
+	},
+	"React useCallback hook": {
+		"scope": "javascript,typescript",
+		"prefix": "ucb",
+		"body": [
+			"const ${1:callbackName} = useCallback((${2:params}) => {",
+			"   ${3:callbackBody}",
+			"}, [${4:dependencies}])"
+		],
+		"description": "React useCallback hook"
+	},
+
+	"React useMemo hook": {
+		"scope": "javascript,typescript",
+		"prefix": "um",
+		"body": ["const ${1:memoName} = useMemo(() => {", "   ${2:computation}", "}, [${3:dependencies}])"],
+		"description": "React useMemo hook"
+	},
+	"React functional component": {
+		"scope": "javascript,typescript",
+		"prefix": "rfc",
+		"body": [
+			"export default function ${1:ComponentName}() {",
+			"   return (",
+			"      <div>",
+			"         ${2:content}",
+			"      </div>",
+			"   )",
+			"}"
+		],
+		"description": "React functional component"
+	},
+
+	"React arrow function component": {
+		"scope": "javascript,typescript",
+		"prefix": "rafc",
+		"body": [
+			"const ${1:ComponentName} = () => {",
+			"   return (",
+			"      <div>",
+			"         ${2:content}",
+			"      </div>",
+			"   )",
+			"}",
+			"",
+			"export default ${1:ComponentName}"
+		],
+		"description": "React arrow function component"
+	},
+	"Console log": {
+		"scope": "javascript,typescript",
+		"prefix": "cl",
+		"body": ["console.log(${1:message})"],
+		"description": "Console log statement"
+	},
+
+	"Not last-child": {
+		"scope": "scss",
+		"prefix": "nlc",
+		"body": ["&:not(:last-child) {\n\t$1\n}"],
+		"description": "Исключая последний объект"
+	},
+
+	"@media max": {
+		"scope": "scss,css",
+		"prefix": "md",
+		"body": ["@media (max-width: $1){\n\t $2 \n}"],
+		"description": "Добавляет медиазапрос max-width"
+	},
+	"@media min": {
+		"scope": "scss,css",
+		"prefix": "mmd",
+		"body": ["@media (min-width:$1){\n\t $2 \n}"],
+		"description": "Добавляет медиазапрос min-width"
+	},
+	"br5": {
+		"scope": "css,scss",
+		"prefix": "br5",
+		"body": ["border-radius: 50%;\n"],
+		"description": "br5"
+	},
+	"bs": {
+		"scope": "scss,css",
+		"prefix": "bs",
+		"body": ["box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);\n"],
+		"description": "bs"
+	},
+
+	"wa": {
+		"scope": "scss,css",
+		"prefix": "wa",
+		"body": ["width: auto;\n"],
+		"description": "wa"
+	},
+	"ha": {
+		"scope": "scss,css",
+		"prefix": "ha",
+		"body": ["height: auto;\n"],
+		"description": "ha"
+	},
+	"aa": {
+		"scope": "scss,css",
+		"prefix": "aa",
+		"body": ["transition: all 0.${1:3}s ease 0s;$2"],
+		"description": "aa"
+	},
+
+	"ar": {
+		"scope": "scss,css",
+		"prefix": "ar",
+		"body": ["transform: rotate(-${1:180}deg);"],
+		"description": "ar"
+	},
+	"as": {
+		"scope": "scss,css",
+		"prefix": "as",
+		"body": ["transform: scale(${1:1});"],
+		"description": "as"
+	},
+	"at": {
+		"scope": "scss,css",
+		"prefix": "at",
+		"body": ["transform: translate(${1:0}px,${2:0}px);$3"],
+		"description": "at"
+	},
+	"att": {
+		"scope": "scss,css",
+		"prefix": "att",
+		"body": ["transform: translate(0px,0px) rotate(0deg) scale(1) skew(0,0);"],
+		"description": "at"
+	},
+	"ex": {
+		"scope": "scss,css",
+		"prefix": "ex",
+		"body": ["@extend %${1:};"],
+		"description": "ex"
+	},
+
+	"lc": {
+		"scope": "scss,css",
+		"prefix": "lc",
+		"body": ["&:last-child{\n\t$0\n}"],
+		"description": "lc"
+	},
+
+	"fc": {
+		"scope": "scss,css",
+		"prefix": "fc",
+		"body": ["&:first-child{\n\t$0\n}"],
+		"description": "fc"
+	},
+	"nc": {
+		"scope": "scss,css",
+		"prefix": "nc",
+		"body": ["&:nth-child($0){}"],
+		"description": "nc"
+	},
+	"BeforeAfter": {
+		"scope": "scss,css",
+		"prefix": "ba",
+		"body": ["&::before,&::after{\n\tcontent:'';\n\t$0\n}"],
+		"description": "ba"
+	},
+	"After": {
+		"scope": "scss,css",
+		"prefix": "a",
+		"body": ["&::after{\n\tcontent:'';\n\t$0\n}"],
+		"description": "after"
+	},
+	"Before": {
+		"scope": "scss,css",
+		"prefix": "b",
+		"body": ["&::before{\n\tcontent:'';\n\t$0\n}"],
+		"description": "before"
+	},
+	"hv": {
+		"scope": "scss,css",
+		"prefix": "hv",
+		"body": ["&:hover{\n\t$0\n}"],
+		"description": "hv"
+	},
+	"hhv": {
+		"scope": "scss,css",
+		"prefix": "hhv",
+		"body": ["@media (any-hover: hover){\n\t&:hover{\n\t\t$0\n\t}\n}"],
+		"description": "hhv"
+	},
+
+	"bg+": {
+		"scope": "scss,css",
+		"prefix": "bg+",
+		"body": ["background: url('../img$0') 0 0 no-repeat;"],
+		"description": "bg+"
+	},
+
+	"md1": {
+		"scope": "scss,css",
+		"prefix": "md1",
+		"body": ["@media (max-width: 1399.98px){\n\t $0 \n}"],
+		"description": "md1"
+	},
+	"mmd1": {
+		"scope": "scss,css",
+		"prefix": "mmd1",
+		"body": ["@media (min-width: 1399.98px){\n\t $0 \n}"],
+		"description": "md1"
+	},
+	"md2": {
+		"scope": "scss,css",
+		"prefix": "md2",
+		"body": ["@media (max-width: 1023.98px){\n\t$0\n}"],
+		"description": "md2"
+	},
+	"mmd2": {
+		"scope": "scss,css",
+		"prefix": "mmd2",
+		"body": ["@media (min-width: 1023.98px){\n\t $0 \n}"],
+		"description": "md1"
+	},
+	"md3": {
+		"scope": "scss,css",
+		"prefix": "md3",
+		"body": ["@media (max-width: 767.98px){\n\t $0 \n}"],
+		"description": "md3"
+	},
+	"mmd3": {
+		"scope": "scss,css",
+		"prefix": "mmd3",
+		"body": ["@media (min-width: 767.98px){\n\t $0 \n}"],
+		"description": "md1"
+	},
+	"md4": {
+		"scope": "scss,css",
+		"prefix": "md4",
+		"body": ["@media (max-width: 566.98px){\n\t $0 \n}"],
+		"description": "md4"
+	},
+	"mmd4": {
+		"scope": "scss,css",
+		"prefix": "mmd4",
+		"body": ["@media (min-width: 566.98px){\n\t $0 \n}"],
+		"description": "md1"
+	},
+	"md5": {
+		"scope": "scss,css",
+		"prefix": "md5",
+		"body": ["@media (max-width: 479.98px){\n\t $0 \n}"],
+		"description": "md4"
+	},
+	"mmd5": {
+		"scope": "scss,css",
+		"prefix": "mmd5",
+		"body": ["@media (min-width: 479.98px){\n\t $0 \n}"],
+		"description": "md1"
+	},
+	"kf": {
+		"scope": "scss,css",
+		"prefix": "kf",
+		"body": "@keyframes ${1:name} {\n\t0% {\n\t\t$2\n\t}\n\t100% {\n\t\t$3\n\t}\n}",
+		"description": "kf"
+	},
+	"gap": {
+		"scope": "scss,css",
+		"prefix": "g",
+		"body": ["gap: $1;"],
+		"description": "gap"
+	}
+}

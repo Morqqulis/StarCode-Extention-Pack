@@ -1,0 +1,24 @@
+{
+	"primary": [
+		"esbenp.prettier-vscode",
+		"dbaeumer.vscode-eslint",
+		"ritwickdey.LiveServer",
+		"diz.ecsstractor-port",
+		"bradgashler.htmltagwrap",
+		"fractalbrew.backticks",
+		"PKief.material-icon-theme",
+		"lior-chamla.google-fonts",
+		"christian-kohler.path-intellisense"
+	],
+	"secondary": [
+		"bradlc.vscode-tailwindcss",
+		"heybourn.headwind",
+		"yoavbls.pretty-ts-errors",
+		"kohlbachjan.the-best-theme",
+		"github.copilot",
+		"codestackr.codestackr-theme",
+		"piyushsarkar.sort-css-properties",
+		"mikestead.dotenv"
+	]
+}
+

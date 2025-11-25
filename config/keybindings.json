@@ -1,0 +1,8 @@
+[
+	{
+		"key": "f3",
+		"command": "editor.action.formatDocument",
+		"when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly"
+	}
+]
+

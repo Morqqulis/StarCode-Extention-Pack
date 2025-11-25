@@ -1,0 +1,64 @@
+{
+	"editor.formatOnSave": true,
+	"editor.formatOnPaste": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.fontFamily": "JetBrains Mono, monospace",
+	"editor.tabSize": 3,
+	"editor.detectIndentation": false,
+	"editor.autoIndent": "full",
+	"editor.wordWrap": "bounded",
+	"editor.wordWrapColumn": 120,
+	"editor.fontWeight": "500",
+	"editor.tabCompletion": "on",
+	"editor.smoothScrolling": true,
+	"editor.cursorBlinking": "smooth",
+	"editor.cursorStyle": "line-thin",
+	"editor.linkedEditing": true,
+	"editor.scrollbar.horizontal": "hidden",
+	"editor.scrollbar.vertical": "hidden",
+	"editor.cursorSmoothCaretAnimation": "on",
+	"workbench.list.smoothScrolling": true,
+	"editor.mouseWheelZoom": true,
+	"prettier.htmlWhitespaceSensitivity": "strict",
+	"prettier.ignorePath": ".prettierignore",
+	"editor.codeActionsOnSave": {
+		"source.fixAll": "explicit",
+		"source.organizeImports": "explicit",
+		"source.fixAll.eslint": "explicit"
+	},
+
+	"explorer.confirmDragAndDrop": false,
+	"explorer.confirmDelete": false,
+	"security.workspace.trust.untrustedFiles": "open",
+
+	"html.hover.documentation": false,
+	"html.hover.references": false,
+	"htmltagwrap.tag": "span",
+	"html.format.wrapAttributes": "aligned-multiple",
+	"css.lint.emptyRules": "ignore",
+	"scss.lint.emptyRules": "ignore",
+	"css.lint.unknownAtRules": "ignore",
+	"scss.lint.unknownAtRules": "ignore",
+
+	"emmet.useInlineCompletions": true,
+	"emmet.preferences": {
+		"output.reverseAttributes": true,
+		"output.inlineBreak": 1
+	},
+
+	"prettier.tabWidth": 3,
+	"prettier.printWidth": 120,
+	"prettier.singleQuote": true,
+	"prettier.trailingComma": "all",
+	"prettier.arrowParens": "avoid",
+	"prettier.bracketSpacing": true,
+	"prettier.useTabs": true,
+	"prettier.semi": false,
+
+	"eslint.enable": true,
+	"eslint.format.enable": true,
+	"eslint.run": "onSave",
+	"eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "html", "css", "scss"],
+	"terminal.integrated.defaultProfile.windows": "Git Bash",
+	"liveServer.settings.donotShowInfoMsg": true
+}
