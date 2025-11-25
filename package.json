@@ -20,7 +20,7 @@
 	"icon": "public/logo.jpg",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/dmitriy-iskenderov/starcode-extension-pack.git"
+		"url": "https://github.com/dmitriy-iskenderov/StarCode-Extention-Pack.git"
 	},
 	"extensionPack": [
 		"esbenp.prettier-vscode",
