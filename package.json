@@ -48,275 +48,72 @@
 	],
 	"main": "./out/extension.js",
 	"contributes": {
-		"configuration": {
-			"title": "StarCode",
-			"properties": {
-				"editor.formatOnSave": {
-					"type": "boolean",
-					"default": true,
-					"description": "StarCode setting: editor.formatOnSave"
-				},
-				"editor.formatOnPaste": {
-					"type": "boolean",
-					"default": true,
-					"description": "StarCode setting: editor.formatOnPaste"
-				},
-				"editor.defaultFormatter": {
-					"type": "string",
-					"default": "esbenp.prettier-vscode",
-					"description": "StarCode setting: editor.defaultFormatter"
-				},
-				"editor.fontFamily": {
-					"type": "string",
-					"default": "JetBrains Mono, monospace",
-					"description": "StarCode setting: editor.fontFamily"
-				},
-				"editor.tabSize": {
-					"type": "number",
-					"default": 3,
-					"description": "StarCode setting: editor.tabSize"
-				},
-				"editor.detectIndentation": {
-					"type": "boolean",
-					"default": false,
-					"description": "StarCode setting: editor.detectIndentation"
-				},
-				"editor.autoIndent": {
-					"type": "string",
-					"default": "full",
-					"description": "StarCode setting: editor.autoIndent"
-				},
-				"editor.wordWrap": {
-					"type": "string",
-					"default": "bounded",
-					"description": "StarCode setting: editor.wordWrap"
-				},
-				"editor.wordWrapColumn": {
-					"type": "number",
-					"default": 120,
-					"description": "StarCode setting: editor.wordWrapColumn"
-				},
-				"editor.fontWeight": {
-					"type": "string",
-					"default": "500",
-					"description": "StarCode setting: editor.fontWeight"
-				},
-				"editor.tabCompletion": {
-					"type": "string",
-					"default": "on",
-					"description": "StarCode setting: editor.tabCompletion"
-				},
-				"editor.smoothScrolling": {
-					"type": "boolean",
-					"default": true,
-					"description": "StarCode setting: editor.smoothScrolling"
-				},
-				"editor.cursorBlinking": {
-					"type": "string",
-					"default": "smooth",
-					"description": "StarCode setting: editor.cursorBlinking"
-				},
-				"editor.cursorStyle": {
-					"type": "string",
-					"default": "line-thin",
-					"description": "StarCode setting: editor.cursorStyle"
-				},
-				"editor.linkedEditing": {
-					"type": "boolean",
-					"default": true,
-					"description": "StarCode setting: editor.linkedEditing"
-				},
-				"editor.scrollbar.horizontal": {
-					"type": "string",
-					"default": "hidden",
-					"description": "StarCode setting: editor.scrollbar.horizontal"
-				},
-				"editor.scrollbar.vertical": {
-					"type": "string",
-					"default": "hidden",
-					"description": "StarCode setting: editor.scrollbar.vertical"
-				},
-				"editor.cursorSmoothCaretAnimation": {
-					"type": "string",
-					"default": "on",
-					"description": "StarCode setting: editor.cursorSmoothCaretAnimation"
-				},
-				"workbench.list.smoothScrolling": {
-					"type": "boolean",
-					"default": true,
-					"description": "StarCode setting: workbench.list.smoothScrolling"
-				},
-				"editor.mouseWheelZoom": {
-					"type": "boolean",
-					"default": true,
-					"description": "StarCode setting: editor.mouseWheelZoom"
-				},
-				"prettier.htmlWhitespaceSensitivity": {
-					"type": "string",
-					"default": "strict",
-					"description": "StarCode setting: prettier.htmlWhitespaceSensitivity"
-				},
-				"prettier.ignorePath": {
-					"type": "string",
-					"default": ".prettierignore",
-					"description": "StarCode setting: prettier.ignorePath"
-				},
-				"editor.codeActionsOnSave": {
-					"type": "object",
-					"default": {
-						"source.fixAll": "explicit",
-						"source.organizeImports": "explicit",
-						"source.fixAll.eslint": "explicit"
-					},
-					"description": "StarCode setting: editor.codeActionsOnSave"
-				},
-				"explorer.confirmDragAndDrop": {
-					"type": "boolean",
-					"default": false,
-					"description": "StarCode setting: explorer.confirmDragAndDrop"
-				},
-				"explorer.confirmDelete": {
-					"type": "boolean",
-					"default": false,
-					"description": "StarCode setting: explorer.confirmDelete"
-				},
-				"security.workspace.trust.untrustedFiles": {
-					"type": "string",
-					"default": "open",
-					"description": "StarCode setting: security.workspace.trust.untrustedFiles"
-				},
-				"html.hover.documentation": {
-					"type": "boolean",
-					"default": false,
-					"description": "StarCode setting: html.hover.documentation"
-				},
-				"html.hover.references": {
-					"type": "boolean",
-					"default": false,
-					"description": "StarCode setting: html.hover.references"
-				},
-				"htmltagwrap.tag": {
-					"type": "string",
-					"default": "span",
-					"description": "StarCode setting: htmltagwrap.tag"
-				},
-				"html.format.wrapAttributes": {
-					"type": "string",
-					"default": "aligned-multiple",
-					"description": "StarCode setting: html.format.wrapAttributes"
-				},
-				"css.lint.emptyRules": {
-					"type": "string",
-					"default": "ignore",
-					"description": "StarCode setting: css.lint.emptyRules"
-				},
-				"scss.lint.emptyRules": {
-					"type": "string",
-					"default": "ignore",
-					"description": "StarCode setting: scss.lint.emptyRules"
-				},
-				"css.lint.unknownAtRules": {
-					"type": "string",
-					"default": "ignore",
-					"description": "StarCode setting: css.lint.unknownAtRules"
-				},
-				"scss.lint.unknownAtRules": {
-					"type": "string",
-					"default": "ignore",
-					"description": "StarCode setting: scss.lint.unknownAtRules"
-				},
-				"emmet.useInlineCompletions": {
-					"type": "boolean",
-					"default": true,
-					"description": "StarCode setting: emmet.useInlineCompletions"
-				},
-				"emmet.preferences": {
-					"type": "object",
-					"default": {
-						"output.reverseAttributes": true,
-						"output.inlineBreak": 1
-					},
-					"description": "StarCode setting: emmet.preferences"
-				},
-				"prettier.tabWidth": {
-					"type": "number",
-					"default": 3,
-					"description": "StarCode setting: prettier.tabWidth"
-				},
-				"prettier.printWidth": {
-					"type": "number",
-					"default": 120,
-					"description": "StarCode setting: prettier.printWidth"
-				},
-				"prettier.singleQuote": {
-					"type": "boolean",
-					"default": true,
-					"description": "StarCode setting: prettier.singleQuote"
-				},
-				"prettier.trailingComma": {
-					"type": "string",
-					"default": "all",
-					"description": "StarCode setting: prettier.trailingComma"
-				},
-				"prettier.arrowParens": {
-					"type": "string",
-					"default": "avoid",
-					"description": "StarCode setting: prettier.arrowParens"
-				},
-				"prettier.bracketSpacing": {
-					"type": "boolean",
-					"default": true,
-					"description": "StarCode setting: prettier.bracketSpacing"
-				},
-				"prettier.useTabs": {
-					"type": "boolean",
-					"default": true,
-					"description": "StarCode setting: prettier.useTabs"
-				},
-				"prettier.semi": {
-					"type": "boolean",
-					"default": false,
-					"description": "StarCode setting: prettier.semi"
-				},
-				"eslint.enable": {
-					"type": "boolean",
-					"default": true,
-					"description": "StarCode setting: eslint.enable"
-				},
-				"eslint.format.enable": {
-					"type": "boolean",
-					"default": true,
-					"description": "StarCode setting: eslint.format.enable"
-				},
-				"eslint.run": {
-					"type": "string",
-					"default": "onSave",
-					"description": "StarCode setting: eslint.run"
-				},
-				"eslint.validate": {
-					"type": "array",
-					"default": [
-						"javascript",
-						"javascriptreact",
-						"typescript",
-						"typescriptreact",
-						"html",
-						"css",
-						"scss"
-					],
-					"description": "StarCode setting: eslint.validate"
-				},
-				"terminal.integrated.defaultProfile.windows": {
-					"type": "string",
-					"default": "Git Bash",
-					"description": "StarCode setting: terminal.integrated.defaultProfile.windows"
-				},
-				"liveServer.settings.donotShowInfoMsg": {
-					"type": "boolean",
-					"default": true,
-					"description": "StarCode setting: liveServer.settings.donotShowInfoMsg"
-				}
-			}
+		"configurationDefaults": {
+			"editor.formatOnSave": true,
+			"editor.formatOnPaste": true,
+			"editor.defaultFormatter": "esbenp.prettier-vscode",
+			"editor.fontFamily": "JetBrains Mono, monospace",
+			"editor.tabSize": 3,
+			"editor.detectIndentation": false,
+			"editor.autoIndent": "full",
+			"editor.wordWrap": "bounded",
+			"editor.wordWrapColumn": 120,
+			"editor.fontWeight": "500",
+			"editor.tabCompletion": "on",
+			"editor.smoothScrolling": true,
+			"editor.cursorBlinking": "smooth",
+			"editor.cursorStyle": "line-thin",
+			"editor.linkedEditing": true,
+			"editor.scrollbar.horizontal": "hidden",
+			"editor.scrollbar.vertical": "hidden",
+			"editor.cursorSmoothCaretAnimation": "on",
+			"workbench.list.smoothScrolling": true,
+			"editor.mouseWheelZoom": true,
+			"prettier.htmlWhitespaceSensitivity": "strict",
+			"prettier.ignorePath": ".prettierignore",
+			"editor.codeActionsOnSave": {
+				"source.fixAll": "explicit",
+				"source.organizeImports": "explicit",
+				"source.fixAll.eslint": "explicit"
+			},
+			"explorer.confirmDragAndDrop": false,
+			"explorer.confirmDelete": false,
+			"security.workspace.trust.untrustedFiles": "open",
+			"html.hover.documentation": false,
+			"html.hover.references": false,
+			"htmltagwrap.tag": "span",
+			"html.format.wrapAttributes": "aligned-multiple",
+			"css.lint.emptyRules": "ignore",
+			"scss.lint.emptyRules": "ignore",
+			"css.lint.unknownAtRules": "ignore",
+			"scss.lint.unknownAtRules": "ignore",
+			"emmet.useInlineCompletions": true,
+			"emmet.preferences": {
+				"output.reverseAttributes": true,
+				"output.inlineBreak": 1
+			},
+			"prettier.tabWidth": 3,
+			"prettier.printWidth": 120,
+			"prettier.singleQuote": true,
+			"prettier.trailingComma": "all",
+			"prettier.arrowParens": "avoid",
+			"prettier.bracketSpacing": true,
+			"prettier.useTabs": true,
+			"prettier.semi": false,
+			"eslint.enable": true,
+			"eslint.format.enable": true,
+			"eslint.run": "onSave",
+			"eslint.validate": [
+				"javascript",
+				"javascriptreact",
+				"typescript",
+				"typescriptreact",
+				"html",
+				"css",
+				"scss"
+			],
+			"terminal.integrated.defaultProfile.windows": "Git Bash",
+			"liveServer.settings.donotShowInfoMsg": true
 		},
 		"keybindings": [
 			{
@@ -327,7 +124,23 @@
 		],
 		"snippets": [
 			{
-				"language": "*",
+				"language": "html",
+				"path": "./snippets/global.code-snippets"
+			},
+			{
+				"language": "javascript",
+				"path": "./snippets/global.code-snippets"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/global.code-snippets"
+			},
+			{
+				"language": "css",
+				"path": "./snippets/global.code-snippets"
+			},
+			{
+				"language": "scss",
 				"path": "./snippets/global.code-snippets"
 			}
 		],

@@ -1,8 +1,8 @@
 <div align="center">
 
-# <img src="public/logo.jpg" alt="StarCode Logo" width="64" height="64"> StarCode Extension Pack
+# <img src="logo.jpg" alt="StarCode Logo" width="64" height="64"> StarCode Extension Pack
 
-**Essential extensions, settings, snippets and fonts for VS Code, Cursor and Windsurf**
+Essential extensions, settings, snippets and fonts for VS Code, Cursor and Windsurf
 
 [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://marketplace.visualstudio.com/items?itemName=dmitriy-iskenderov.starcode)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.md)
@@ -16,12 +16,12 @@
 
 ## ✨ Features
 
-- 🎁 **Extension Pack** - Automatically installs essential extensions
-- 💡 **Recommended Extensions** - Suggests additional useful extensions  
-- ⚙️ **Pre-configured Settings** - Optimized VS Code settings for development
-- 📝 **Custom Snippets** - Ready-to-use code snippets for React, JavaScript, TypeScript, HTML, CSS, and SCSS
-- ⌨️ **Key Bindings** - Custom keyboard shortcuts (F3 for Format Document)
-- 🔤 **Font Installation** - Optional JetBrains Mono font installation
+-  🎁 **Extension Pack** - Automatically installs essential extensions
+-  💡 **Recommended Extensions** - Suggests additional useful extensions
+-  ⚙️ **Pre-configured Settings** - Optimized VS Code settings for development
+-  📝 **Custom Snippets** - Ready-to-use code snippets for React, JavaScript, TypeScript, HTML, CSS, and SCSS
+-  ⌨️ **Key Bindings** - Custom keyboard shortcuts (F3 for Format Document)
+-  🔤 **Font Installation** - Optional JetBrains Mono font installation
 
 ---
 
@@ -29,17 +29,17 @@
 
 These extensions are automatically installed when you install the pack:
 
-| Extension | Description |
-|-----------|-------------|
-| <img src="https://marketplace.visualstudio.com/_apis/public/gallery/publishers/esbenp/vsextensions/prettier-vscode/latest/vspackage/assets/icon" width="24" height="24"> **[Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)** | Code formatter |
-| <img src="https://marketplace.visualstudio.com/_apis/public/gallery/publishers/dbaeumer/vsextensions/vscode-eslint/latest/vspackage/assets/icon" width="24" height="24"> **[ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)** | JavaScript linter |
-| <img src="https://marketplace.visualstudio.com/_apis/public/gallery/publishers/ritwickdey/vsextensions/LiveServer/latest/vspackage/assets/icon" width="24" height="24"> **[Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)** | Local development server |
-| 🔧 **[eCSStractor](https://marketplace.visualstudio.com/items?itemName=diz.ecsstractor-port)** | CSS extraction tool |
-| 🏷️ **[htmltagwrap](https://marketplace.visualstudio.com/items?itemName=bradgashler.htmltagwrap)** | HTML tag wrapper |
-| \` **[Backticks](https://marketplace.visualstudio.com/items?itemName=fractalbrew.backticks)** | Template string helper |
-| 🎨 **[Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)** | File icons |
-| 🔤 **[Google Fonts](https://marketplace.visualstudio.com/items?itemName=lior-chamla.google-fonts)** | Font preview |
-| 📁 **[Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)** | Path autocomplete |
+| Extension                                                                                                          | Description              |
+| ------------------------------------------------------------------------------------------------------------------ | ------------------------ |
+| 💅 **[Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)**                      | Code formatter           |
+| ✅ **[ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)**                        | JavaScript linter        |
+| 🌐 **[Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)**                    | Local development server |
+| 🔧 **[eCSStractor](https://marketplace.visualstudio.com/items?itemName=diz.ecsstractor-port)**                     | CSS extraction tool      |
+| 🏷️ **[htmltagwrap](https://marketplace.visualstudio.com/items?itemName=bradgashler.htmltagwrap)**                  | HTML tag wrapper         |
+| \` **[Backticks](https://marketplace.visualstudio.com/items?itemName=fractalbrew.backticks)**                      | Template string helper   |
+| 🎨 **[Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)**        | File icons               |
+| 🔤 **[Google Fonts](https://marketplace.visualstudio.com/items?itemName=lior-chamla.google-fonts)**                | Font preview             |
+| 📁 **[Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)** | Path autocomplete        |
 
 ---
 
@@ -47,16 +47,16 @@ These extensions are automatically installed when you install the pack:
 
 These extensions are suggested but not automatically installed:
 
-| Extension | Description |
-|-----------|-------------|
-| 🎨 **[Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)** | Tailwind CSS autocomplete |
-| 🌊 **[Headwind](https://marketplace.visualstudio.com/items?itemName=heybourn.headwind)** | Tailwind class sorter |
-| 🐛 **[Pretty TypeScript Errors](https://marketplace.visualstudio.com/items?itemName=yoavbls.pretty-ts-errors)** | Better TypeScript error messages |
-| 🌟 **[The Best Theme](https://marketplace.visualstudio.com/items?itemName=kohlbachjan.the-best-theme)** | Beautiful theme |
-| 🤖 **[GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=github.copilot)** | AI pair programmer |
-| 🎨 **[codeSTACKr Theme](https://marketplace.visualstudio.com/items?itemName=codestackr.codestackr-theme)** | Modern theme |
-| 📐 **[Sort CSS](https://marketplace.visualstudio.com/items?itemName=piyushsarkar.sort-css-properties)** | CSS property sorter |
-| 🔐 **[DOTENV](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv)** | .env file support |
+| Extension                                                                                                         | Description                      |
+| ----------------------------------------------------------------------------------------------------------------- | -------------------------------- |
+| 🎨 **[Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)** | Tailwind CSS autocomplete        |
+| 🌊 **[Headwind](https://marketplace.visualstudio.com/items?itemName=heybourn.headwind)**                          | Tailwind class sorter            |
+| 🐛 **[Pretty TypeScript Errors](https://marketplace.visualstudio.com/items?itemName=yoavbls.pretty-ts-errors)**   | Better TypeScript error messages |
+| 🌟 **[The Best Theme](https://marketplace.visualstudio.com/items?itemName=kohlbachjan.the-best-theme)**           | Beautiful theme                  |
+| 🤖 **[GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=github.copilot)**                       | AI pair programmer               |
+| 🎨 **[codeSTACKr Theme](https://marketplace.visualstudio.com/items?itemName=codestackr.codestackr-theme)**        | Modern theme                     |
+| 📐 **[Sort CSS](https://marketplace.visualstudio.com/items?itemName=piyushsarkar.sort-css-properties)**           | CSS property sorter              |
+| 🔐 **[DOTENV](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv)**                             | .env file support                |
 
 ---
 
@@ -106,17 +106,17 @@ On first activation, you'll be prompted to install **JetBrains Mono** fonts. You
 
 The extension includes custom snippets for:
 
-- ⚛️ **React** - Components and hooks (`rfc`, `rafc`, `sta`, `eff`, etc.)
-- 💻 **JavaScript/TypeScript** - Functions and utilities (`arf`, `iife`, `cl`, etc.)
-- 🌐 **HTML** - Swiper slider templates (`swiper`, `swiperfull`)
-- 🎨 **CSS/SCSS** - Media queries, pseudo-classes, transforms (`md`, `hv`, `ba`, etc.)
+-  ⚛️ **React** - Components and hooks (`rfc`, `rafc`, `sta`, `eff`, etc.)
+-  💻 **JavaScript/TypeScript** - Functions and utilities (`arf`, `iife`, `cl`, etc.)
+-  🌐 **HTML** - Swiper slider templates (`swiper`, `swiperfull`)
+-  🎨 **CSS/SCSS** - Media queries, pseudo-classes, transforms (`md`, `hv`, `ba`, etc.)
 
 **Usage:** Type the snippet prefix and press `Tab` to expand.
 
 ### ⌨️ Key Bindings
 
-| Key | Action |
-|-----|--------|
+| Key  | Action          |
+| ---- | --------------- |
 | `F3` | Format Document |
 
 ---
@@ -126,24 +126,27 @@ The extension includes custom snippets for:
 All settings are pre-configured with optimal defaults:
 
 ### Prettier Settings
-- **Tab Width:** 3 spaces
-- **Print Width:** 120 characters
-- **Single Quotes:** Enabled
-- **Trailing Commas:** All
-- **Semicolons:** Disabled
-- **Use Tabs:** Enabled
+
+-  **Tab Width:** 3 spaces
+-  **Print Width:** 120 characters
+-  **Single Quotes:** Enabled
+-  **Trailing Commas:** All
+-  **Semicolons:** Disabled
+-  **Use Tabs:** Enabled
 
 ### Editor Settings
-- **Font:** JetBrains Mono
-- **Tab Size:** 3
-- **Smooth Scrolling:** Enabled
-- **Scrollbars:** Hidden
-- **Format on Save:** Enabled
-- **Format on Paste:** Enabled
+
+-  **Font:** JetBrains Mono
+-  **Tab Size:** 3
+-  **Smooth Scrolling:** Enabled
+-  **Scrollbars:** Hidden
+-  **Format on Save:** Enabled
+-  **Format on Paste:** Enabled
 
 ### ESLint Settings
-- **Auto-fix on Save:** Enabled
-- **Validate:** JavaScript, TypeScript, HTML, CSS, SCSS
+
+-  **Auto-fix on Save:** Enabled
+-  **Validate:** JavaScript, TypeScript, HTML, CSS, SCSS
 
 You can customize these settings in VS Code settings (`Ctrl+,`).
 
@@ -158,10 +161,11 @@ You can customize these settings in VS Code settings (`Ctrl+,`).
 5. Run `npm run create-vsix` to create new `.vsix` file
 
 **Example:**
+
 ```json
 {
-  "primary": ["extension-id-1", "extension-id-2"],
-  "secondary": ["extension-id-3", "extension-id-4"]
+	"primary": ["extension-id-1", "extension-id-2"],
+	"secondary": ["extension-id-3", "extension-id-4"]
 }
 ```
 
@@ -169,11 +173,11 @@ You can customize these settings in VS Code settings (`Ctrl+,`).
 
 ## 💻 Compatibility
 
-- ✅ **VS Code** 1.90.0+
-- ✅ **Cursor** (all versions)
-- ✅ **Windsurf** (all versions)
-- ✅ **Node.js** 22.20.0+ (for development)
-- ✅ **TypeScript** 5.6.0+ (for development)
+-  ✅ **VS Code** 1.90.0+
+-  ✅ **Cursor** (all versions)
+-  ✅ **Windsurf** (all versions)
+-  ✅ **Node.js** 22.20.0+ (for development)
+-  ✅ **TypeScript** 5.6.0+ (for development)
 
 ---
 
@@ -185,15 +189,15 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## 👤 Author
 
-**Dmitriy Iskenderov**
+Dmitriy Iskenderov
 
-Developed and maintained by **StarCode School**
+Developed and maintained by StarCode
 
 ---
 
 <div align="center">
 
-Made with ❤️ by [StarCode School](https://starcode.school)
+Made with ❤️ by [StarCode](https://starcode.az)
 
 [⬆ Back to Top](#-starcode-extension-pack)
 

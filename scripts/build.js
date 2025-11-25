@@ -12,31 +12,8 @@ function readJsonFile(filePath) {
 	return JSON.parse(fs.readFileSync(fullPath, 'utf8'));
 }
 
-function generateConfiguration(settings) {
-	const properties = {};
-	for (const [key, value] of Object.entries(settings)) {
-		let type = 'string';
-		if (typeof value === 'boolean') {
-			type = 'boolean';
-		} else if (typeof value === 'number') {
-			type = 'number';
-		} else if (Array.isArray(value)) {
-			type = 'array';
-		} else if (typeof value === 'object' && value !== null) {
-			type = 'object';
-		}
-
-		properties[key] = {
-			type: type,
-			default: value,
-			description: `StarCode setting: ${key}`
-		};
-	}
-
-	return {
-		title: 'StarCode',
-		properties: properties
-	};
+function generateConfigurationDefaults(settings) {
+	return settings;
 }
 
 function generateKeybindings(keybindings) {
@@ -54,7 +31,23 @@ function generateSnippets(snippetsConfig) {
 
 	return [
 		{
-			language: '*',
+			language: 'html',
+			path: './snippets/global.code-snippets'
+		},
+		{
+			language: 'javascript',
+			path: './snippets/global.code-snippets'
+		},
+		{
+			language: 'typescript',
+			path: './snippets/global.code-snippets'
+		},
+		{
+			language: 'css',
+			path: './snippets/global.code-snippets'
+		},
+		{
+			language: 'scss',
 			path: './snippets/global.code-snippets'
 		}
 	];
@@ -87,7 +80,7 @@ const packageJson = {
 	activationEvents: ['onStartupFinished'],
 	main: './out/extension.js',
 	contributes: {
-		configuration: generateConfiguration(settings),
+		configurationDefaults: generateConfigurationDefaults(settings),
 		keybindings: generateKeybindings(keybindings),
 		snippets: generateSnippets(snippetsConfig),
 		commands: [

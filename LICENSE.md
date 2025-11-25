@@ -1,10 +1,6 @@
-<div align="center">
-
 # MIT License
 
-**Copyright (c) 2025 StarCode School**
-
-</div>
+Copyright (c) 2025 StarCode
 
 ---
 
@@ -28,14 +24,10 @@ SOFTWARE.**
 
 ---
 
-<div align="center">
-
 ## 📝 Additional Information
 
-This extension pack is **developed and maintained by StarCode School**.
+This extension pack is **developed and maintained by StarCode**.
 
 All rights reserved.
 
-For more information, visit [StarCode School](https://starcode.school)
-
-</div>
+For more information, visit [StarCode](https://starcode.az)
