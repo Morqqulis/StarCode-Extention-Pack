@@ -76,7 +76,7 @@ const packageJson = {
 	description: 'StarCode Extension Pack - Essential extensions, settings, snippets and fonts for VS Code, Cursor and Windsurf',
 	version: '1.0.0',
 	engines: {
-		vscode: '^1.60.0'
+		vscode: '^1.90.0'
 	},
 	categories: ['Extension Packs'],
 	keywords: ['extension pack', 'prettier', 'eslint', 'snippets', 'fonts'],
@@ -105,10 +105,10 @@ const packageJson = {
 		'create-vsix': 'npm run compile && npx @vscode/vsce package'
 	},
 	devDependencies: {
-		'@types/node': '^20.14.0',
-		'@types/vscode': '^1.60.0',
-		'typescript': '^5.5.0',
-		'@vscode/vsce': '^2.24.0'
+		'@types/node': '^22.0.0',
+		'@types/vscode': '^1.90.0',
+		'typescript': '^5.6.0',
+		'@vscode/vsce': '^3.7.1'
 	}
 };
 

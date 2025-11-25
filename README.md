@@ -6,7 +6,9 @@
 
 [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://marketplace.visualstudio.com/items?itemName=dmitriy-iskenderov.starcode)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.md)
-[![VS Code](https://img.shields.io/badge/VS%20Code-1.60.0+-blue.svg)](https://code.visualstudio.com/)
+[![VS Code](https://img.shields.io/badge/VS%20Code-1.90.0+-blue.svg)](https://code.visualstudio.com/)
+[![Node.js](https://img.shields.io/badge/Node.js-22.20.0+-green.svg)](https://nodejs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.6.0+-blue.svg)](https://www.typescriptlang.org/)
 
 </div>
 
@@ -167,9 +169,11 @@ You can customize these settings in VS Code settings (`Ctrl+,`).
 
 ## 💻 Compatibility
 
-- ✅ **VS Code** 1.60.0+
+- ✅ **VS Code** 1.90.0+
 - ✅ **Cursor** (all versions)
 - ✅ **Windsurf** (all versions)
+- ✅ **Node.js** 22.20.0+ (for development)
+- ✅ **TypeScript** 5.6.0+ (for development)
 
 ---
 
